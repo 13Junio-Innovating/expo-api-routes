@@ -22,7 +22,7 @@ export default function Home() {
         password,
       })
 
-      Alert.alert("Olá " + response.data.name)
+      Alert.alert("Olá " + response.data.name + " seja bem vindo(a)")
     } catch (error) {
       if (isAxiosError(error)) {
         return Alert.alert(error.response?.data)
